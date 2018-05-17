@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
 }
-.par-1 {
-    background-color: cyan;
-    color: #52a6e7
+.cancel-pre-font {
+    font-family: inherit;
+    direction: ltr;
 }
