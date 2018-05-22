@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Cousine'); /*Yisrael Pechman 200552560*/
+@font-face {
+    font-family: emono;
+    src: url("./web-hebrew-font/ArialMonospace.ttf");
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.cancel-pre-font {
+    font-family: inherit;
+    direction: ltr;
+}
+.custom-pre-style {
+    display: block;
+    unicode-bidi: embed;
+    font-family:  monospace, Cousine;
+    white-space: pre;
+    direction: ltr;
+}
