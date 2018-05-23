@@ -7,14 +7,39 @@
 body {
     font-family: Arial, sans-serif;
 }
+
 .cancel-pre-font {
     font-family: inherit;
     direction: ltr;
 }
+
 .custom-pre-style {
     display: block;
     unicode-bidi: embed;
-    font-family:  monospace, Cousine;
+    font-family: monospace, Cousine;
     white-space: pre;
     direction: ltr;
+}
+
+.sidebar {
+    position: fixed;
+    z-index: 1000;
+    display: block;
+    overflow-x: hidden;
+    background-color: #d4edda;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    /*left: 0;*/
+    right: auto;
+    direction: rtl;
+    text-align: right;
+}
+
+.main-article {
+    /*
+    margin-right: 160px;
+    padding-right: 10px;
+    */
+    /*width: 500px;*/
 }
