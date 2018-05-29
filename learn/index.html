@@ -4,26 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <title>learn HTML home page</title>
-    <link rel="stylesheet" href="./bootstrap.min.css"
-          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="bootstrap-rtl.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-            crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="foundation/css/foundation.css">
+    <link rel="stylesheet" href="foundation/css/app.css">
+    <!--
+        <link rel="stylesheet" href="./bootstrap.min.css"
+              integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" href="bootstrap-rtl.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+                integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+                crossorigin="anonymous"></script>
+    -->
+    <!--<link rel="stylesheet" href="style.css">-->
+    <!--
+        <link rel="stylesheet" href="style-2.css">
+    -->
 
 </head>
 <body dir="rtl">
 <div class="container">
-    <div class="row">
-        <div class="col-12 col-sm-4 col-xl-3 sidebar">
-            <div class="">
+    <div>
+        <div class="top-bar">
+            <div class="top-bar">
+                <ul class=" menu align-center" data-dropdown-menu>
+                    <li class=""><a href="#" class="">נושא1</a></li>
+                    <li class=""><a href="#" class="">נושא2</a></li>
+                    <li class=""><a href="#" class="">נושא3</a></li>
+                    <li class=""><a href="#" class="">נושא4</a></li>
+                    <li class=""><a href="#" class="">נושא5</a></li>
+                    <li class=""><a href="#" class="">נושא6</a></li>
+                    <li>
+                        <a href="#">dropdown</a>
+                        <ul class="menu vertical">
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="menu align-center">
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+            <li><a href="#">Four</a></li>
+        </ul>
+    </div>
+
+    <div class="row main-content-area">
+        <div class="col-12 col-sm-4 col-xl-3 sidebar-outer fixed-top">
+            <div class="sidebar-inner">
                 sidebar <br>
                 sidebar <br>
                 sidebar <br>
@@ -566,6 +602,36 @@
         </div>
     </div>
 </div>
+<!-- Add a Sticky Menu -->
+<!--
+<div data-sticky-container>
+    <div class="top-bar" data-sticky data-margin-top="0" id="example-menu">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li class="menu-text">Site Title</li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu" data-magellan>
+                <li><a href="#first">One</a></li>
+                <li><a href="#second">Two</a></li>
+                <li><a href="#third">Three</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+-->
+
+<!-- Add content where magellan will be linked -->
+<div class="sections">
+    <section id="first" data-magellan-target="first">First Section</section>
+    <section id="second" data-magellan-target="second">Second Section</section>
+    <section id="third" data-magellan-target="third">Third Section</section>
+</div>
+<script src="foundation/js/vendor/jquery.js"></script>
+<script src="foundation/js/vendor/what-input.js"></script>
+<script src="foundation/js/vendor/foundation.js"></script>
+<script src="foundation/js/app.js"></script>
 </body>
 </html>
 

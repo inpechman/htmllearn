@@ -21,19 +21,29 @@ body {
     direction: ltr;
 }
 
-.sidebar {
-    position: fixed;
-    z-index: 1000;
-    display: block;
-    overflow-x: hidden;
-    background-color: #d4edda;
+.sidebar-outer {
+    /*position: fixed;*/
+    /*z-index: 1000;*/
+    /*display: flex;*/
+    /*overflow-x: hidden;*/
+    /*background-color: #d4edda;*/
     overflow-y: auto;
-    top: 0;
+    top: 50px;
     bottom: 0;
-    /*left: 0;*/
-    right: auto;
-    direction: rtl;
-    text-align: right;
+    /*height: 100%;*/
+    /*margin-top: 50px;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*!*left: 0;*!*/
+    /*right: auto;*/
+    /*direction: rtl;*/
+    /*text-align: right;*/
+    /*border-collapse: collapse;*/
+
+}
+
+.main-content-area{
+    margin-top: 50px;
 }
 
 .main-article {

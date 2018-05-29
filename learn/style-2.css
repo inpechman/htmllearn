@@ -1,0 +1,6 @@
+.sidebar-outer {
+    overflow-y: auto;
+    top: 50px;
+    bottom: 0;
+
+}
